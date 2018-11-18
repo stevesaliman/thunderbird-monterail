@@ -26,12 +26,18 @@
 
 /******************************************************************/
 /*********************** SELECT THEME HERE ************************/
-@import "themes/system.css";
+/* @import "themes/system.css"; /* The default Thunderbird Theme */
+/* @import "themes/dark.css"; /**/
+@import "themes/fulldark.css"; /**/
+/* @import "themes/light.css"; /**/
+/* @import "themes/monterail.css"; /**/
+
 /******************************************************************/
 /******************************************************************/
 
 /* Uncommment to use the dark folder pane style when using the system theme with dark menus */
 @import "tweaks/dark-folder-pane.css";
+
 
 /* Select icon theme (leave commented to use default for the selected theme)*/
 /* @import "icons/lightIcons.css"; /*For dark Folder Tree and Message List*/
@@ -44,6 +50,7 @@
 /****************************************************************************/
 :root {
   /*---- General Options ----*/
+  --default-font: var(--system-font)
   /*--default-font: var(--light-sans-font); /* Change to var(--system-font) to use your default font, or specify a font name */
   /*--menu-text-color: MenuText;*/
   
